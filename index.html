@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jordi Soriano Mora - Interiorisme i Protecció Solar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #f4e3b2; /* ocre suau */
+        color: #1a1a1a;
+        font-family: 'Lato', sans-serif;
+      }
+
+      header {
+        background-color: #1a1a1a; /* negre */
+        border-bottom: 3px solid #d4af37; /* detall daurat */
+      }
+
+      .navbar-brand {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #d4af37 !important;
+        font-family: 'Playfair Display', serif;
+      }
+
+      .nav-link {
+        color: #f4e3b2 !important;
+        font-weight: 500;
+      }
+
+      .nav-link:hover {
+        color: #d4af37 !important;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 6rem 0;
+        background: url('img/interior-luxury.jpg') center/cover no-repeat;
+        color: white;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+      }
+
+      .hero .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #d4af37;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        color: #f4e3b2;
+      }
+
+      .product-card {
+        border: 1px solid #d4af37;
+        background-color: #fffaf0;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      }
+
+      .product-card img {
+        height: 260px;
+        object-fit: cover;
+        border-bottom: 3px solid #8B0000; /* accent vermell */
+      }
+
+      .product-card h5 {
+        font-family: 'Playfair Display', serif;
+        color: #8B0000;
+      }
+
+      .product-card p {
+        color: #333;
+      }
+
+      #serveis {
+        background-color: #fff1d6; /* ocre més clar */
+      }
+
+      #serveis h5 {
+        color: #8B0000;
+        font-weight: 600;
+      }
+
+      footer {
+        background-color: #1a1a1a;
+        color: #f4e3b2;
+        padding: 2rem 0;
+        text-align: center;
+        border-top: 3px solid #d4af37;
+      }
+
+      footer a {
+        color: #d4af37;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+
+      input, textarea {
+        border-radius: 6px;
+        border: 1px solid #d4af37;
+        padding: 0.5rem;
+        width: 100%;
+        background-color: #fffdf7;
+      }
+
+      button {
+        background-color: #8B0000;
+        color: white;
+        border: none;
+        padding: 0.75rem;
+        width: 100%;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #d4af37;
+        color: #1a1a1a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Jordi Soriano Mora</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#qui">Qui som</a></li>
+              <li class="nav-item"><a class="nav-link" href="#productes">Col·leccions</a></li>
+              <li class="nav-item"><a class="nav-link" href="#serveis">Serveis</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacte">Contacte</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Interiors amb elegància i confort</h1>
+        <p>Solucions tèxtils d’alta gamma per a la llar i espais professionals.</p>
+      </div>
+    </section>
+
+    <!-- Productes -->
+    <section id="productes" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color:#8B0000; font-family: 'Playfair Display', serif;">Les nostres col·leccions</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card product-card h-100">
+              <img src="img/sofa.jpg" class="card-img-top" alt="Sofàs i tapisseria">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sofàs i tapisseria</h5>
+                <p class="card-text">Acabats nobles i disseny a mida per a espais exclusius.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card h-100">
+              <img src="img/cortines.jpg" class="card-img-top" alt="Cortines i estors">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cortines i estors</h5>
+                <p class="card-text">Controla la llum amb estil mitjançant teixits tècnics i decoratius.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card product-card h-100">
+              <img src="img/toldos.jpg" class="card-img-top" alt="Toldos i pantalles solars">
+              <div class="card-body text-center">
+                <h5 class="card-title">Toldos i pantalles solars</h5>
+                <p class="card-text">Solucions domotitzades de protecció solar per a interior i exterior.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serveis -->
+    <section id="serveis" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color:#8B0000; font-family: 'Playfair Display', serif;">Serveis a mida</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <h5>Projectes integrals</h5>
+            <p>Assessorem en interiorisme tèxtil, des del concepte fins a la instal·lació.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Instal·lació i domòtica</h5>
+            <p>Professionals especialitzats en sistemes motoritzats i control intel·ligent.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Confecció personalitzada</h5>
+            <p>Creem peces a mida amb materials d'alta qualitat per a cada projecte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacte -->
+    <section id="contacte" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold" style="color:#8B0000; font-family: 'Playfair Display', serif;">Contacte</h2>
+        <form class="mx-auto" style="max-width: 500px;" action="#" method="post">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correu electrònic</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="missatge" class="form-label">Missatge</label>
+            <textarea id="missatge" name="missatge" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Envia</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="mb-1"><strong>Espai Tèxtil</strong> · Arenys de Mar</p>
+        <p class="mb-1">tlf. 93 792 10 92 · correu: info@espaitextil.cat</p>
+        <p>Segueix-nos a 
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
